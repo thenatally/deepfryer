@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  deepfryer:
+    build: .
+    ports:
+      - "3007:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
